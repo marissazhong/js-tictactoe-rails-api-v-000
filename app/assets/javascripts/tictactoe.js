@@ -17,6 +17,23 @@ function player() {
   return ( turn % 2 == 0 ? 'X' : 'O' );
 }
 
-function updateState(board) {
+function updateState(position) {
+  let token = player();
+  $(position).text(token);
+}
+
+function setMessage() {
+
+}
+
+function checkWinner() {
+
+}
+
+function doTurn() {
+
+}
+
+function attachListeners() {
 
 }
