@@ -59,7 +59,7 @@ function attachListeners() {
     }
   });
   $('#save').on('click', () => saveGame());
-  $('#previous').on('click', () => showPreviousGames());
+  $('#previous').on('click', () => previousGame());
   $('#clear').on('click', () => clearBoard());
 }
 
@@ -68,4 +68,12 @@ function clearBoard() {
   turn = 0;
   currentGame = 0;
   }
+}
+
+function saveGame() {
+
+}
+
+function previousGame() {
+
 }
