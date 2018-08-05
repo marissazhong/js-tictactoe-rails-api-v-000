@@ -58,10 +58,9 @@ function attachListeners() {
       doTurn(this);
     }
   });
-
   $('#save').on('click', () => saveGame());
   $('#previous').on('click', () => showPreviousGames());
-  $('#clear').on('click', () => resetBoard());
+  $('#clear').on('click', () => clearBoard());
 }
 
 function clearBoard() {
