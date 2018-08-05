@@ -30,8 +30,13 @@ function checkWinner() {
 
 }
 
-function doTurn() {
-
+function doTurn(position) {
+  updateState(position);
+  turn ++;
+  if (checkWinner()) {
+    saveGame();
+    clearBoard();
+  }
 }
 
 function attachListeners() {
