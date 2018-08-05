@@ -27,7 +27,16 @@ function setMessage(message) {
 }
 
 function checkWinner() {
+  let board = [];
+  let winner = "";
 
+  $('td').text();
+
+  WIN_COMBO.forEach(function(combo) {
+    if () {
+      setMessage(`Player ${board[combo[0]]} Won!`);
+    }
+  });
 }
 
 function doTurn(position) {
@@ -44,7 +53,15 @@ function doTurn(position) {
 }
 
 function attachListeners() {
+  $('td').on('click', function() {
+    if (!$.text(this) && !checkWinner()) {
+      doTurn(this);
+    }
+  });
 
+  $('#save').on('click', () => saveGame());
+  $('#previous').on('click', () => showPreviousGames());
+  $('#clear').on('click', () => resetBoard());
 }
 
 function clearBoard() {
