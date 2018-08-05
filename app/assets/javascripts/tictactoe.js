@@ -36,6 +36,8 @@ function doTurn(position) {
   if (checkWinner()) {
     saveGame();
     clearBoard();
+  } else if (turn === 9) {
+    setMessage("Tie game.")
   }
 }
 
