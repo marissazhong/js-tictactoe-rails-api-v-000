@@ -37,3 +37,10 @@ function doTurn() {
 function attachListeners() {
 
 }
+
+function clearBoard() {
+  $('td').empty();
+  turn = 0;
+  currentGame = 0;
+  }
+}
