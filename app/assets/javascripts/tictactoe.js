@@ -2,7 +2,7 @@
 
 let turn = 0;
 
-function player(turn) {
+function player() {
   return ( turn%2 === 0 ? 'X' : 'O');
 }
 
