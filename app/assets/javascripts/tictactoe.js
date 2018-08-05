@@ -1,7 +1,7 @@
 // Code your JavaScript / jQuery solution here
 
 let turn = 0;
-var currentGame = 0;
+let currentGame = 0;
 
 $(document).ready(function() {
   attachListeners();
