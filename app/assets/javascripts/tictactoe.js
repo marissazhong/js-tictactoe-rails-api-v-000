@@ -2,6 +2,10 @@
 
 let turn = 0;
 
+$(document).ready(function() {
+  attachListeners();
+});
+
 function player() {
   return ( turn % 2 == 0 ? 'X' : 'O' );
 }
