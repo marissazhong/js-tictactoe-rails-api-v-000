@@ -22,8 +22,8 @@ function updateState(position) {
   $(position).text(token);
 }
 
-function setMessage() {
-
+function setMessage(message) {
+  $('#message').text(message);
 }
 
 function checkWinner() {
