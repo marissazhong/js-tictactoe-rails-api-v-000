@@ -3,7 +3,7 @@
 let turn = 0;
 
 function player() {
-  return ( turn % 2 ? 'O' : 'X' );
+  return ( turn % 2 == 0 ? 'O' : 'X' );
 }
 
 function updateState(board) {
